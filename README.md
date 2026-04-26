@@ -1,6 +1,6 @@
-# Random Quote Generator
+# Sparked
 
-A Flutter application that generates random inspirational quotes to motivate and inspire users.
+Sparked is a Flutter application that generates random inspirational quotes to motivate and inspire users.
 
 ## Features
 
