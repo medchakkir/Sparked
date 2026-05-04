@@ -1,6 +1,6 @@
-# Sparked
+# Quoto
 
-Sparked is a Flutter application that generates random inspirational quotes to motivate and inspire users.
+Quoto is a Flutter application that generates random inspirational quotes to motivate and inspire users.
 
 ## Features
 
