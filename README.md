@@ -17,7 +17,7 @@ Sparked is a Flutter application that generates random inspirational quotes to m
 
 ## Contributing
 
-Feel free to submit issues or pull requests to improve Birdle!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
