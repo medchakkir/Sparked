@@ -4,7 +4,14 @@ import '../widgets/refresh_button.dart';
 import 'dart:math';
 
 class QuoteScreen extends StatefulWidget {
-  const QuoteScreen({super.key});
+  final VoidCallback onToggleTheme;
+  final ThemeMode themeMode;
+
+  const QuoteScreen({
+    super.key,
+    required this.onToggleTheme,
+    required this.themeMode,
+  });
 
   @override
   State<QuoteScreen> createState() => _QuoteScreenState();
@@ -30,10 +37,22 @@ class _QuoteScreenState extends State<QuoteScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Mindful Respite')),
+      appBar: AppBar(
+        title: const Text('Quoto'),
+        actions: [
+          IconButton(
+            onPressed: widget.onToggleTheme,
+            icon: Icon(
+              widget.themeMode == ThemeMode.light
+                  ? Icons.dark_mode
+                  : Icons.light_mode,
+            ),
+          ),
+        ],
+      ),
       body: Center(
         child: Column(
-          mainAxisSize: .min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             QuoteCard(quote: _quotes[_currentIndex]),
             const SizedBox(height: 24),
